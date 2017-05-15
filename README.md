@@ -18,8 +18,6 @@
 
         git clone https://github.com/ludwiktrammer/deep-learning.git
 
-    Note: There are couple minor differences between this repository and the original Udacity repository. You can read about them [in README](https://github.com/ludwiktrammer/deep-learning/tree/master/image-classification#how-is-this-repository-different-from-the-original). To follow this instructions you need to use this repository.
-
 3. Enter the folder for the image classification project:
 
         cd image-classification
@@ -51,13 +49,3 @@ Alternatively, If you already stoped the experiment, you can still download the 
 (where ID is the "RUN ID" displayed in the terminal when you run the project; if you lost it you can also find it in the ["Experiments" section on floyd.com](https://www.floydhub.com/experiments))
     
 Just run the command above, download `dlnd_image_classification.ipynb` and replace your local version with the newly downloaded one.
-
-## How is this repository different from [the original](https://github.com/udacity/deep-learning)?
-
-1. I added support for Floyds built-in cifar-10 dataset. If its presence is detected, it will be used, without a need to download anything. ([see the commit](https://github.com/ludwiktrammer/deep-learning/commit/2e84ff7852905f154f1692f67ca15da28ac43149), [learn more abut datasets provided by Floyd](http://docs.floydhub.com/guides/datasets/))
-
-2. I added a `floyd_requirements.txt` file, so an additional dependency is automatically taken care of. ([see the commit](https://github.com/ludwiktrammer/deep-learning/commit/80b459411d4395dacf8f46be0b028c81858bd97a), [learn more about `.floyd_requirements.txt` files](http://docs.floydhub.com/home/installing_dependencies/))
-
-3. I added a `.floydignore` file to stop local data from being uploaded to Floyd - which wastes time and may even result in a timeout ([see the commit](https://github.com/ludwiktrammer/deep-learning/commit/30d4b536b67366feef38425ce1406e969452717e), [learn more about `.floydignore` files](http://docs.floydhub.com/home/floyd_ignore/))
-
-3. I added this README
